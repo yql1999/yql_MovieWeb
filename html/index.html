@@ -1,0 +1,261 @@
+<!--NOTE（3）:
+前后div对应；
+<link href="../css/style.css" rel="stylesheet" type="text/css">注意要加..，因为两个文件不在同一个文件夹内;text;
+样式中若存在水平并列显示display: inline-block;要在HTML中把前一个结尾标记和后一个开始标记之间的空格和换行删去；-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>叶倩琳 201706061330</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css"><!--注意要加..，因为两个文件不在同一个文件夹内-->
+    <meta name="author" content="叶倩琳">
+    <meta name="keywords" content="大众电影网，电影">
+    <meta name="description" content="大众电影网是一个推荐优秀电影的网站。">
+    <meta name="robots" content="index,follow">
+
+    <script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body>
+
+<!--页眉-->
+<div id="header-wrapper">
+    <!--网站logo-->
+    <header class="container">
+        <div id="logo">
+            <a href="index.html"><h1>大众电影网</h1></a>
+        </div>
+        <div id="search">
+            <form action="index.html" method="get">
+                <input type="search" placeholder="站内搜索"><input type="submit" value="搜索">
+            </form>
+        </div>
+    </header>
+    <!--导航菜单-->
+    <div id="nav">
+        <nav class="container">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li>
+                    <a href="category.html">电影分类</a>
+                    <ul>
+                        <li><a href="#">爱情类</a></li>
+                        <li>
+                            <a href="#">科幻类</a></li>
+                        <li>
+                            <a href="#">惊悚类</a></li>
+                        <li>
+                            <a href="#">动作类</a></li>
+                        <li>
+                            <a href="#">动画类</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="specials.html">近期影讯</a></li>
+                <li>
+                    <a href="contact.html">联系我们</a></li>
+                <li>
+                    <a href="about.html">关于我们</a></li>
+            </ul>
+            <div id="displaydate"></div>
+            <div id="displaytime"></div>
+            <div id="menu-logo">
+                <a href="cart.html">购物车</a>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!--内容-->
+<div id="content-wrapper" class="container">
+    <!--左边内容区-->
+    <article>
+        <!--图片切换广告-->
+        <div id="adv">
+            <dl>
+                <dt><a href="#" id="a1">1</a><a href="#" id="a2">2</a><a href="#" id="a3">3</a><a href="#" id="a4">4</a> </dt>
+                <dd><a href="#"><img width="100%" height="100%" src="../images/b-ad1.gif" id="badimg" alt="广告"></a></dd>
+            </dl>
+        </div>
+        <!--本周推荐-->
+        <section>
+            <h2 id="title1">本周推荐</h2>
+            <section class="recommend">
+                <h3>《调音师》</h3>
+                <a href="#"><img src="../images/prod2.jpg" alt="调音师"></a><div class="recommend-content">
+                    <p>
+                        阿德里安（Grégoire Leprince-Ringuet 饰）是 一个学习钢琴已有15年之久的天才钢琴家，可
+                        是在梦寐以求的伯恩斯坦钢琴大赛上他功败垂成，人生跌落谷底。经过一段时间调整，阿德里安重新振作，成为了一名盲人钢琴调音师。事实上他只是带上了隐形眼镜，这会让别人认为他听觉方面更加敏锐，并由此得到更多的同情和消费，甚至还会窥视到别人的生活与隐私，他兀自沉浸在这种虽处闹市又仿佛置身世外的超然之中。某天，他来到一户人家工作，殊不知这里刚刚发生一起凶案…
+                    </p>
+                </div>
+                <div class="cartmore">
+                    <a class="cart" href="cart.html">加入购物车</a>
+                    <a class="more" href="details.html">详细内容</a>
+                </div>
+            </section>
+            <section class="recommend">
+                <h3>《复仇者联盟4：终局之战》</h3>
+                <a href="#"><img src="../images/prod3.jpg" alt="复仇者联盟4：终局之战"></a><div class="recommend-content">
+                    <p>《复仇者联盟4：终局之战》（Avengers: Endgame）是安东尼·罗素和乔·罗素执导的美国科幻电影，改编自美国漫威漫画，漫威电影宇宙（Marvel Cinematic Universe，缩写为MCU）第22部影片，由小罗伯特·唐尼、克里斯·埃文斯、克里斯·海姆斯沃斯、马克·鲁法洛、斯嘉丽·约翰逊、杰瑞米·雷纳、保罗·路德、布丽·拉尔森、唐·钱德尔、凯伦·吉兰、乔什·布洛林等主演。是漫威电影宇宙“无限传奇”系列的最终章，与《美国队长3：内战》、《雷神3：诸神黄昏》、《复仇者联盟3：无限战争》、《蚁人2：黄蜂女现身》以及《惊奇队长》承接。
+                    </p>
+                    <p>该片将于2019年4月24日在中国内地上映，2019年4月26日在美国上映。</p>
+                    <p>截至2019年04月14日，《复仇者联盟4》 预售票房破2亿。</p>
+                </div>
+                <div class="cartmore">
+                    <a class="cart" href="cart.html">加入购物车</a>
+                    <a class="more" href="details.html">详细内容</a>
+                </div>
+            </section>
+        </section>
+        <!--近期影讯-->
+        <section class="article-section">
+            <section class="new-book">
+                <h2 id="title2">近期影讯</h2>
+                <h3>《反贪风暴4》</h3>
+                <div class="effect-1">
+                    <div class="image-box">
+                        <img src="../images/prod4.jpg" alt="反贪风暴4">
+                    </div>
+                    <div class="text-desc">
+                        <h3>《反贪风暴4》</h3>
+                        <p>《
+                            <mark>反贪风暴4</mark>
+                            》是由黄百鸣监制，林德禄执导，古天乐、郑嘉颖、林峯、林家栋、周秀娜领衔主演，张智霖特别出演的犯罪动作电影。
+                            该片讲述了ICAC陆志廉卧底狱中，与狱中两大势力斗智斗力，最终引出并成功破获大案的故事
+                        </p>
+                        <div class="cartmore">
+                            <a class="cart" href="cart.html">加入购物车</a>
+                            <a class="more" href="details.html">详细内容</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="new-book">
+                <h3>《雷霆沙赞！》</h3>
+                <div class="effect-1">
+                    <div class="image-box">
+                        <img src="../images/prod5.jpg" alt="雷霆沙赞！">
+                    </div>
+                    <div class="text-desc">
+                        <h3>《雷霆沙赞！》</h3>
+                        <p>《
+                            <mark>雷霆沙赞！</mark>
+                            》是由大卫·F·桑德伯格执导，扎克瑞·莱维、马克·斯特朗、亚瑟·安其、杰克·迪伦·格雷泽、格蕾丝·富尔顿等主演的一部奇幻动作冒险喜剧片。该片于2019年4月5日在中国、美国同步上映。
+                            《雷霆沙赞！》是DC电影宇宙的第七部作品。紧随《超人：钢铁之躯》、《神奇女侠》、《正义联盟》与《海王》等DC超级英雄巨制的步伐。该片故事围绕14岁的少年比利·巴特森展开，某天他获得神秘巫师的魔法，对抗邪恶势力，每当他喊出“沙赞”，就能变身为具有成年强壮体型的超级英雄沙赞
+                        </p>
+                        <div class="cartmore">
+                            <a class="cart" href="cart.html">加入购物车</a>
+                            <a class="more" href="details.html">详细内容</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section><!--即将上映-->
+        <section class="article-section">
+            <section class="low-price">
+                <h2 id="title3">即将上映</h2>
+                <h3>《如影随心》</h3>
+                <a href="#"><img class="promotion" src="../images/prod1.jpg" alt="如影随心"></a>
+                <div class="cartmore">
+                    <a class="cart" href="cart.html">加入购物车</a>
+                    <a class="more" href="details.html">详细内容</a>
+                </div>
+            </section>
+            <section class="low-price">
+                <h3>《复仇者联盟4：终局之战》</h3>
+                <a href="#"><img class="promotion" src="../images/prod3.jpg" alt="复仇者联盟4：终局之战"></a>
+                <div class="cartmore">
+                    <a class="cart" href="cart.html">加入购物车</a>
+                    <a class="more" href="details.html">详细内容</a>
+                </div>
+            </section>
+        </section>
+    </article><!--右边边栏区--><aside>
+        <!--广告区-->
+        <section id="advert">
+            <a href="#"><img src="../images/ad1.jpg" alt="广告"></a>
+            <a href="#"><img src="../images/ad2.jpg" alt="广告"></a>
+            <a href="#"><img src="../images/ad3.jpg" alt="广告"></a>
+        </section>
+        <div class="border"><img src="../images/border.gif" alt="分隔线"></div>
+        <!--热门电影-->
+        <section id="best-selling">
+            <h2 id="title7">热门电影</h2>
+            <ul>
+                <li>
+                    <a class="selling" href="#">绿皮书</a>
+                    <div class="curr">
+                        <div class="p-img">
+                            <a title="绿皮书" href="#"><img width="80" height="80" src="../images/selling1.jpg"></a>
+                        </div>
+                        <div class="p-name">
+                            <a title="绿皮书" href="#">绿皮书</a>
+                            <strong>$35.50</strong>
+                            <del>$48.00</del>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="selling" href="#">惊奇队长</a>
+                    <div class="curr">
+                        <div class="p-img">
+                            <a title="惊奇队长" href="#"><img width="80" height="80" src="../images/selling2.jpg"></a>
+                        </div>
+                        <div class="p-name">
+                            <a title="惊奇队长" href="#"> 惊奇队长</a>
+                            <strong>$37.00</strong>
+                            <del>$52.00</del>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <div class="border"><img src="../images/border.gif" alt="分隔线"></div>
+        <!--电影分类-->
+        <section class="aside-section">
+            <h2 id="title4">电影分类</h2>
+            <ul>
+                <li><a href="category.html">爱情类</a></li>
+                <li><a href="category.html">科幻类</a></li>
+                <li><a href="category.html">惊悚类</a></li>
+                <li><a href="category.html">动作类</a></li>
+                <li><a href="category.html">动画类</a></li>
+            </ul>
+        </section><!--合作伙伴--><section class="aside-section">
+            <h2 id="title5">合作伙伴</h2>
+            <ul>
+                <li><a href="#">中国电影股份有限公司</a></li>
+                <li><a href="#">浙江电影出版社</a></li>
+                <li><a href="#">韩国电影股份有限公司</a></li>
+            </ul>
+        </section>
+        <div class="border"><img src="../images/border.gif" alt="分隔线"></div>
+        <!--关于电影网-->
+        <section class="about">
+            <h2 id="title6">关于电影网</h2>
+            <img src="../images/about.jpg" alt="大众电影网"><p>
+           大众电影网成立于2019年4月18日，欢迎广大热爱电影的朋友们前来关注！</p>
+        </section>
+    </aside>
+</div>
+
+<!--页脚-->
+<div id="footer-wrapper" class="container">
+    <!--页脚导航-->
+    <footer class="container">
+        <section>
+            <a href="index.html">首页</a> <a href="about.html">电影预告</a> <a href="#">
+            服务条款</a> <a href="#">隐私策略</a> <a href="contact.html">联系我们</a>
+        </section>
+    </footer>
+</div>
+
+<!--版权标志-->
+<div id="copyright" class="container">
+    Copyright (C) <a href="index.html">大众电影网</a> 2019, All Rights Reserved | 浙 ICP 证 000001 号音像制品经营许可证
+    <address>通讯地址： 浙江工业大学屏峰校区 留和路288号 读者服务部&nbsp;&nbsp;电话: 17857699044&nbsp;&nbsp;邮箱： 2535032447Aqq.com</address>
+</div>
+
+</body>
+</html>

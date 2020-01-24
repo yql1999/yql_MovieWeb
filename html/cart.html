@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>叶倩琳 201706061330</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css"><!--注意要加..，因为两个文件不在同一个文件夹内-->
+    <meta name="author" content="叶倩琳">
+    <meta name="keywords" content="大众电影网，电影">
+    <meta name="description" content="大众电影网是一个推荐优秀电影的网站。">
+    <meta name="robots" content="index,follow">
+</head>
+<body>
+
+<!--页眉-->
+<div id="header-wrapper">
+    <!--网站logo-->
+    <header class="container">
+        <div id="logo">
+            <a href="index.html"><h1>大众电影网</h1></a>
+        </div>
+        <div id="search">
+            <form action="index.html" method="get">
+                <input type="search" placeholder="站内搜索"><input type="submit" value="搜索">
+            </form>
+        </div>
+    </header>
+    <!--导航菜单-->
+    <div id="nav">
+        <nav class="container">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li>
+                    <a href="category.html">电影分类</a>
+                    <ul>
+                        <li><a href="#">爱情类</a></li>
+                        <li>
+                            <a href="#">科幻类</a></li>
+                        <li>
+                            <a href="#">惊悚类</a></li>
+                        <li>
+                            <a href="#">动作类</a></li>
+                        <li>
+                            <a href="#">动画类</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="specials.html">近期影讯</a></li>
+                <li>
+                    <a href="contact.html">联系我们</a></li>
+                <li>
+                    <a href="about.html">关于我们</a></li>
+            </ul>
+            <div id="menu-logo">
+                <a href="cart.html">购物车</a>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!--内容-->
+<div id="content-wrapper" class="container">
+    <!--左边内容区-->
+    <article>
+       <!--面包屑导航-->
+       <section class="crumb-nav">您现在的位置：<a href="index.html">首页</a>
+       &gt;&gt;</section>
+        <section class="cartt">
+            <h2 id="title8">购物车</h2>
+            <table class="cart-table">
+                <tr class="cart-title">
+                    <th colspan="2">名称</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>合计</th>
+                </tr>
+                <tr>
+                    <td class="td-center"><a href="details.html"><img src="../images/selling1.jpg" alet="封面"></a>></td>
+                    <td><h3>《绿皮书》</h3></td>
+                    <td class="td-right">100.00</td>
+                    <td class="td-right" style="padding: 20px;"> 1</td>
+                    <td class="td-right">30.00</td>
+                </tr>
+                <tr>
+                    <td class="td-center"><a href="details.html"><img src="../images/selling2.jpg" alet="封面"></a>></td>
+                    <td><h3>《惊奇队长》</h3></td>
+                    <td class="td-right">100.00</td>
+                    <td class="td-right" style="padding: 20px;"> 1</td>
+                    <td class="td-right">30.00</td>
+                </tr>
+                <tr>
+                    <td class="td-center"><a href="details.html"><img src="../images/selling3.jpg" alet="封面"></a>></td>
+                    <td><h3>《调音师》</h3></td>
+                    <td class="td-right">100.00</td>
+                    <td class="td-right" style="padding: 20px;"> 1</td>
+                    <td class="td-right">40.00</td>
+                </tr>
+                <tr class="cart-total">
+                    <td colspan="5" class="td-right">3张电影票总价（不含运费）：￥100.00<a href="#">去结算</a></td>
+                </tr>
+            </table>
+        </section>
+    </article><!--右边边栏区--><aside>
+    <!--广告区-->
+    <section id="advert">
+        <a href="#"><img src="../images/ad1.jpg" alt="广告"></a>
+        <a href="#"><img src="../images/ad2.jpg" alt="广告"></a>
+        <a href="#"><img src="../images/ad3.jpg" alt="广告"></a>
+    </section>
+    <div class="border"><img src="../images/border.gif" alt="分隔线"></div>
+    <!--热门电影-->
+    <section id="best-selling">
+        <h2 id="title7">热门电影</h2>
+        <ul>
+            <li>
+                <a class="selling" href="#">绿皮书</a>
+                <div class="curr">
+                    <div class="p-img">
+                        <a title="绿皮书" href="#"><img width="80" height="80" src="../images/selling1.jpg"></a>
+                    </div>
+                    <div class="p-name">
+                        <a title="绿皮书" href="#">绿皮书</a>
+                        <strong>$35.50</strong>
+                        <del>$48.00</del>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a class="selling" href="#">惊奇队长</a>
+                <div class="curr">
+                    <div class="p-img">
+                        <a title="惊奇队长" href="#"><img width="80" height="80" src="../images/selling2.jpg"></a>
+                    </div>
+                    <div class="p-name">
+                        <a title="惊奇队长" href="#"> 惊奇队长</a>
+                        <strong>$37.00</strong>
+                        <del>$52.00</del>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <div class="border"><img src="../images/border.gif" alt="分隔线"></div>
+    <!--电影分类-->
+    <section class="aside-section">
+        <h2 id="title4">电影分类</h2>
+        <ul>
+            <li><a href="category.html">爱情类</a></li>
+            <li><a href="category.html">科幻类</a></li>
+            <li><a href="category.html">惊悚类</a></li>
+            <li><a href="category.html">动作类</a></li>
+            <li><a href="category.html">动画类</a></li>
+        </ul>
+    </section><!--合作伙伴--><section class="aside-section">
+    <h2 id="title5">合作伙伴</h2>
+    <ul>
+        <li><a href="#">中国电影股份有限公司</a></li>
+        <li><a href="#">浙江电影出版社</a></li>
+        <li><a href="#">韩国电影股份有限公司</a></li>
+    </ul>
+</section>
+    <div class="border"><img src="../images/border.gif" alt="分隔线"></div>
+    <!--关于电影网-->
+    <section class="about">
+        <h2 id="title6">关于电影网</h2>
+        <img src="../images/about.jpg" alt="大众电影网"> <p>
+        大众电影网成立于2019年4月18日，欢迎广大热爱电影的朋友们前来关注！</p>
+    </section>
+</aside>
+</div>
+
+<!--页脚-->
+<div id="footer-wrapper" class="container">
+    <!--页脚导航-->
+    <footer class="container">
+        <section>
+            <a href="index.html">首页</a> <a href="about.html">电影预告</a> <a href="#">
+            服务条款</a> <a href="#">隐私策略</a> <a href="contact.html">联系我们</a>
+        </section>
+    </footer>
+</div>
+
+<!--版权标志-->
+<div id="copyright" class="container">
+    Copyright (C) <a href="index.html">大众电影网</a> 2019, All Rights Reserved | 浙 ICP 证 000001 号音像制品经营许可证
+    <address>通讯地址： 浙江工业大学屏峰校区 留和路288号 读者服务部&nbsp;&nbsp;电话: 17857699044&nbsp;&nbsp;邮箱： 2535032447Aqq.com</address>
+</div>
+
+</body>
+</html></html>
